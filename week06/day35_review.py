@@ -2,11 +2,12 @@ def calculate(voltage,current):
     power = voltage * current
     return power
 
-def save_result(power_w, energy_Wh,charge_Ah):
+def save_result(power_w, energy_Wh,charge_Ah,duration_s):
     with open("day35_results.txt","a",encoding="utf-8") as file:
         file.write ("功率："+ str(power_w)+ "W\n")
         file.write ("电能："+ str(energy_Wh)+ "Wh\n")
         file.write ("电量："+ str(charge_Ah)+ "Ah\n")
+        file.write ("持续时间："+ str(duration_s)+ "s\n")
 try:
     voltage = float(input("请输入电压，V："))
     current = float(input("请输入电流，A："))
@@ -18,7 +19,7 @@ try:
         power_w = calculate(voltage, current)
         energy_Wh = power_w*duration_s/3600
         charge_Ah = current*duration_s/3600
-        save_result(power_w,energy_Wh,charge_Ah)
+        save_result(power_w,energy_Wh,charge_Ah,duration_s)
         try:
             with open("day35_results.txt", "r", encoding="utf-8") as file:
                 for line in file:
