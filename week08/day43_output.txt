@@ -1,0 +1,34 @@
+   voltage_V  current_A
+0        4.8       0.02
+1        5.0       0.04
+2        4.0       0.05
+0    4.8
+1    5.0
+2    4.0
+Name: voltage_V, dtype: float64
+前两条记录：
+   voltage_V  current_A
+0        4.8       0.02
+1        5.0       0.04
+电流列：
+0    0.02
+1    0.04
+2    0.05
+Name: current_A, dtype: float64
+
+   voltage_V  current_A
+0        4.8       0.02
+1        5.0       0.04
+2        4.0       0.05
+0    4.8
+1    5.0
+2    4.0
+Name: voltage_V, dtype: float64
+前一条记录：
+   voltage_V  current_A
+0        4.8       0.02
+电流列：
+0    0.02
+1    0.04
+2    0.05
+Name: current_A, dtype: float64

@@ -54,5 +54,6 @@
 |任务|用时|内容|文件|
 |---|---:|---|---|
 |第42天|—|使用Pandas建立测量数据表、读取电压列并修改数据。|[代码](week08/day42_dataframe.py) · [输出](week08/day42_output.txt)|
+|第43天|—|使用Pandas查看前几行并读取电流列。|[代码](week08/day43_select.py) · [输出](week08/day43_output.txt)|
 
 [每周学习笔记](notes)
